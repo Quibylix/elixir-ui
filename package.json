@@ -11,7 +11,7 @@
     "test:watch": "vitest",
     "test": "vitest run",
     "clean": "rm -rf dist",
-    "copy": "copyfiles -u 1 src/**/*.module.css dist",
+    "copy": "copyfiles -u 1 src/**/*.css dist",
     "build": "tsc --project tsconfig.build.json && npm run copy",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
