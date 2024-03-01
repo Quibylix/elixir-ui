@@ -1,0 +1,100 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --neutral-50: #f7f7f7;
+  --neutral-100: #efefef;
+  --neutral-200: #dcdcdc;
+  --neutral-300: #bdbdbd;
+  --neutral-400: #989898;
+  --neutral-500: #7c7c7c;
+  --neutral-600: #656565;
+  --neutral-700: #525252;
+  --neutral-800: #464646;
+  --neutral-900: #3d3d3d;
+  --neutral-950: #292929;
+
+  --default-50: #f7f7f7;
+  --default-100: #e6e6e6;
+  --default-200: #dfdfdf;
+  --default-300: #c8c8c8;
+  --default-400: #adadad;
+  --default-500: #999999;
+  --default-600: #888888;
+  --default-700: #7b7b7b;
+  --default-800: #676767;
+  --default-900: #545454;
+  --default-950: #363636;
+
+  --primary-50: #f0f1fd;
+  --primary-100: #e4e6fb;
+  --primary-200: #ced1f7;
+  --primary-300: #b1b4f0;
+  --primary-400: #8f8ce7;
+  --primary-500: #8176de;
+  --primary-600: #715bd0;
+  --primary-700: #614cb6;
+  --primary-800: #503f94;
+  --primary-900: #433976;
+  --primary-950: #292145;
+
+  --secondary-50: #f3f7fc;
+  --secondary-100: #e6f0f8;
+  --secondary-200: #c7e0f0;
+  --secondary-300: #96c6e3;
+  --secondary-400: #5ea8d2;
+  --secondary-500: #3d93c5;
+  --secondary-600: #2971a0;
+  --secondary-700: #225b82;
+  --secondary-800: #204e6c;
+  --secondary-900: #1f425b;
+  --secondary-950: #152a3c;
+
+  --danger-50: #fef4f2;
+  --danger-100: #fee6e2;
+  --danger-200: #ffd1c9;
+  --danger-300: #fdb1a4;
+  --danger-400: #fa846f;
+  --danger-500: #f15236;
+  --danger-600: #df3f23;
+  --danger-700: #bc3119;
+  --danger-800: #9b2c19;
+  --danger-900: #812a1b;
+  --danger-950: #461209;
+
+  --success-50: #f5fbea;
+  --success-100: #e9f6d1;
+  --success-200: #d3eea8;
+  --success-300: #b5e076;
+  --success-400: #9fd356;
+  --success-500: #7ab52d;
+  --success-600: #5e9020;
+  --success-700: #486f1c;
+  --success-800: #3c581c;
+  --success-900: #334b1c;
+  --success-950: #19290a;
+
+  --warning-50: #fffeea;
+  --warning-100: #fffac5;
+  --warning-200: #fff685;
+  --warning-300: #ffea46;
+  --warning-400: #ffdb1b;
+  --warning-500: #ffbb00;
+  --warning-600: #e29000;
+  --warning-700: #bb6502;
+  --warning-800: #984e08;
+  --warning-900: #7c400b;
+  --warning-950: #482100;
+
+  --info-50: #f2f9f9;
+  --info-100: #ddeff0;
+  --info-200: #bedfe3;
+  --info-300: #91c7cf;
+  --info-400: #5da7b3;
+  --info-500: #428c98;
+  --info-600: #397381;
+  --info-700: #386673;
+  --info-800: #314f59;
+  --info-900: #2c444d;
+  --info-950: #192b33;
+}
