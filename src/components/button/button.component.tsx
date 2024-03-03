@@ -11,7 +11,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     | "warning"
     | "info";
   size?: "sm" | "md" | "lg";
-  variant?: "solid" | "outline" | "ghost" | "text";
+  variant?: "solid" | "outlined" | "ghost" | "text";
   fullWidth?: boolean;
   overrideClassName?: string;
 };

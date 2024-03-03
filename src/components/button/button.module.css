@@ -127,13 +127,13 @@
   border-color: var(--solid-bg-disabled);
 }
 
-.outlineVariant {
+.outlinedVariant {
   background-color: var(--outline-bg);
   color: var(--outline-fg);
   border: 0.1rem solid var(--outline-fg);
 }
 
-.outlineVariant:hover {
+.outlinedVariant:hover {
   background-color: var(--outline-bg-hover);
   color: var(--outline-fg-hover);
   border-color: var(--outline-fg-hover);

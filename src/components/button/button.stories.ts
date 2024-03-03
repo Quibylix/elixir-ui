@@ -123,7 +123,7 @@ export const Outline: Story = {
   args: {
     color: "primary",
     size: "md",
-    variant: "outline",
+    variant: "outlined",
     children: "Button",
   },
 };
