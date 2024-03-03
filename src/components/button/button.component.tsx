@@ -13,10 +13,12 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: "sm" | "md" | "lg";
   variant?: "solid" | "outline" | "ghost" | "text";
   fullWidth?: boolean;
+  overrideClassName?: string;
 };
 
 export default function Button({
   className,
+  overrideClassName,
   type,
   color = "default",
   size = "md",
@@ -34,6 +36,10 @@ export default function Button({
   );
 
   return (
-    <button className={buttonClassName} type={type ?? "button"} {...props} />
+    <button
+      className={overrideClassName ?? buttonClassName}
+      type={type ?? "button"}
+      {...props}
+    />
   );
 }
