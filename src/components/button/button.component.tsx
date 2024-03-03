@@ -28,9 +28,9 @@ export default function Button({
 }: ButtonProps) {
   const buttonClassName = clsx(
     styles.button,
-    styles[`color--${color}`],
-    styles[`size--${size}`],
-    styles[`variant--${variant}`],
+    styles[`${color}Color`],
+    styles[`${size}Size`],
+    styles[`${variant}Variant`],
     fullWidth && styles.fullWidth,
     className,
   );
