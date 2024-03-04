@@ -119,6 +119,7 @@
 .solidVariant:hover {
   background-color: var(--solid-bg-hover);
   border-color: var(--solid-bg-hover);
+  box-shadow: 0 0.2rem 0.5rem 0.5rem var(--outline-bg-hover);
 }
 
 .solidVariant:disabled {
@@ -161,6 +162,7 @@
   background-color: var(--text-bg-hover);
   color: var(--text-fg-hover);
   border-color: var(--text-bg-hover);
+  box-shadow: none;
 }
 
 .mdSize {
@@ -193,7 +195,8 @@
     background-color 0.2s ease,
     color 0.2s ease,
     border-color 0.2s ease,
-    transform 0.1s ease;
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
 }
 
 .button:active {
