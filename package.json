@@ -13,9 +13,10 @@
     "test": "vitest run",
     "clean": "rm -rf dist",
     "copy": "copyfiles -u 1 src/**/*.css dist",
-    "build": "tsc --project tsconfig.build.json && pnpm run copy",
+    "build": "pnpm clean && tsc --project tsconfig.build.json && pnpm run copy",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "react",
