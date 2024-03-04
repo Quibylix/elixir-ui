@@ -126,6 +126,7 @@
   background-color: var(--solid-bg-disabled);
   color: var(--solid-fg-disabled);
   border-color: var(--solid-bg-disabled);
+  box-shadow: none;
 }
 
 .outlinedVariant {
