@@ -30,7 +30,7 @@ const meta = {
     },
     variant: {
       control: "select",
-      options: ["solid", "outline", "ghost", "text"],
+      options: ["solid", "outlined", "ghost", "text"],
       defaultValue: "solid",
     },
     fullWidth: {
@@ -190,5 +190,16 @@ export const Disabled: Story = {
     variant: "solid",
     children: "Button",
     disabled: true,
+  },
+};
+
+export const AsLink: Story = {
+  args: {
+    as: "a",
+    href: "#",
+    color: "default",
+    size: "md",
+    variant: "solid",
+    children: "Button",
   },
 };

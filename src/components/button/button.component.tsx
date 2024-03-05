@@ -1,22 +1,29 @@
 import clsx from "clsx";
+import { createElement } from "react";
 import styles from "./button.module.css";
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  color?:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "danger"
-    | "success"
-    | "warning"
-    | "info";
-  size?: "sm" | "md" | "lg";
-  variant?: "solid" | "outlined" | "ghost" | "text";
-  fullWidth?: boolean;
-  overrideClassName?: string;
-};
+type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function Button({
+export type ButtonProps<T extends React.ElementType> =
+  React.ComponentPropsWithoutRef<T> & {
+    className?: BaseButtonProps["className"];
+    type?: BaseButtonProps["type"];
+    color?:
+      | "default"
+      | "primary"
+      | "secondary"
+      | "danger"
+      | "success"
+      | "warning"
+      | "info";
+    size?: "sm" | "md" | "lg";
+    variant?: "solid" | "outlined" | "ghost" | "text";
+    fullWidth?: boolean;
+    overrideClassName?: string;
+    as?: T;
+  };
+
+export default function Button<T extends React.ElementType = "button">({
   className,
   overrideClassName,
   type,
@@ -24,8 +31,9 @@ export default function Button({
   size = "md",
   variant = "solid",
   fullWidth,
+  as = "button" as T,
   ...props
-}: ButtonProps) {
+}: ButtonProps<T>) {
   const buttonClassName = clsx(
     styles.button,
     styles[`${color}Color`],
@@ -35,11 +43,9 @@ export default function Button({
     className,
   );
 
-  return (
-    <button
-      className={overrideClassName ?? buttonClassName}
-      type={type ?? "button"}
-      {...props}
-    />
-  );
+  return createElement(as, {
+    className: overrideClassName ?? buttonClassName,
+    type: type ?? "button",
+    ...props,
+  });
 }

@@ -42,4 +42,26 @@ describe("Button", () => {
     const button = screen.getByRole("button", { name: "Click me" });
     expect(button).to.have.property("style").that.includes({ color: "red" });
   });
+
+  it("should be rendered as a link when the `as` prop is set to `a`", () => {
+    render(
+      <Button as="a" href="https://example.com">
+        Click me
+      </Button>,
+    );
+
+    const link = screen.getByRole("link", { name: "Click me" });
+    expect(link.getAttribute("href")).to.equal("https://example.com");
+  });
+
+  it("should accept any HTML element as the `as` prop", () => {
+    render(
+      <Button as="div" role="button">
+        Click me
+      </Button>,
+    );
+
+    const button = screen.getByRole("button", { name: "Click me" });
+    expect(button).to.have.property("tagName", "DIV");
+  });
 });

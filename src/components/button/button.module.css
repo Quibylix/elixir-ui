@@ -198,6 +198,8 @@
     border-color 0.2s ease,
     transform 0.1s ease,
     box-shadow 0.2s ease;
+  text-decoration: none;
+  font-family: inherit;
 }
 
 .button:active {
