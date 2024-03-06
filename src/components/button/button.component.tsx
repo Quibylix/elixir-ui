@@ -19,13 +19,11 @@ export type ButtonProps<T extends React.ElementType> =
     size?: "sm" | "md" | "lg";
     variant?: "solid" | "outlined" | "ghost" | "text";
     fullWidth?: boolean;
-    overrideClassName?: string;
     as?: T;
   };
 
 export default function Button<T extends React.ElementType = "button">({
   className,
-  overrideClassName,
   type,
   color = "default",
   size = "md",
@@ -44,7 +42,7 @@ export default function Button<T extends React.ElementType = "button">({
   );
 
   return createElement(as, {
-    className: overrideClassName ?? buttonClassName,
+    className: buttonClassName,
     type: type ?? "button",
     ...props,
   });

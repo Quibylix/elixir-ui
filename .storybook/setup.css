@@ -1,0 +1,3 @@
+@layer variables, elixir;
+
+@import "../src/globals.css" layer(variables);
