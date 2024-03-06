@@ -1,0 +1,101 @@
+@layer elixir {
+  .defaultColor {
+    --fg: var(--default-800);
+    --fg-hover: var(--black);
+    --bg-hover: var(--default-100);
+  }
+
+  .primaryColor {
+    --fg: var(--primary-600);
+    --fg-hover: var(--primary-800);
+    --bg-hover: var(--primary-100);
+  }
+
+  .secondaryColor {
+    --fg: var(--secondary-600);
+    --fg-hover: var(--secondary-800);
+    --bg-hover: var(--secondary-100);
+  }
+
+  .dangerColor {
+    --fg: var(--danger-700);
+    --fg-hover: var(--danger-800);
+    --bg-hover: var(--danger-100);
+  }
+
+  .successColor {
+    --fg: var(--success-700);
+    --fg-hover: var(--success-800);
+    --bg-hover: var(--success-100);
+  }
+
+  .warningColor {
+    --fg: var(--warning-800);
+    --fg-hover: var(--warning-900);
+    --bg-hover: var(--warning-100);
+  }
+
+  .infoColor {
+    --fg: var(--info-700);
+    --fg-hover: var(--info-800);
+    --bg-hover: var(--info-100);
+  }
+
+  .textVariant {
+    color: var(--fg);
+  }
+
+  .textVariant:hover {
+    text-decoration: underline;
+  }
+
+  .outlinedVariant {
+    border: 0.1rem solid var(--fg);
+    color: var(--fg);
+    background-color: transparent;
+    padding: var(--padding);
+  }
+
+  .outlinedVariant:hover {
+    border-color: var(--fg-hover);
+    color: var(--fg-hover);
+    background-color: var(--bg-hover);
+    box-shadow: 0 0.1rem 0.3rem var(--bg-hover);
+  }
+
+  .mdSize {
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    --padding: 0.5rem 1rem;
+  }
+
+  .smSize {
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    --padding: 0.3rem 0.6rem;
+  }
+
+  .lgSize {
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+    --padding: 0.7rem 1.4rem;
+  }
+
+  .fullWidth {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .link {
+    cursor: pointer;
+    display: inline-block;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.1s ease,
+      box-shadow 0.2s ease;
+    text-decoration: none;
+    font-family: inherit;
+  }
+}
