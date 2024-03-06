@@ -15,5 +15,21 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: config => {
+    if (!config.resolve) {
+      config.resolve = {};
+    }
+
+    if (!config.resolve.alias) {
+      config.resolve.alias = {};
+    }
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": require("path").resolve(__dirname, "../src"),
+    };
+
+    return config;
+  },
 };
 export default config;
