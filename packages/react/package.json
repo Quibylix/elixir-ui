@@ -1,0 +1,58 @@
+{
+  "name": "@elixir-ui/react",
+  "version": "0.0.1-alpha.0",
+  "description": "A super set of UI components for React",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test:watch": "vitest",
+    "test": "vitest run",
+    "clean": "rm -rf dist",
+    "copy": "copyfiles -u 1 src/**/*.css dist",
+    "build": "pnpm clean && tsc --project tsconfig.build.json && pnpm run copy",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "design",
+    "system"
+  ],
+  "author": "Quibylix",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "copyfiles": "^2.4.1",
+    "storybook": "^7.6.17",
+    "vite": "^5.1.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0"
+  },
+  "files": [
+    "/dist"
+  ]
+}

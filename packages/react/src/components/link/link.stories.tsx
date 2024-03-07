@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import { Link } from "@/index";
+import Link from ".";
 
 const meta = {
   title: "Elixir UI / Link",
