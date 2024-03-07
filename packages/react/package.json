@@ -6,6 +6,10 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quibylix/elixir-ui.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
