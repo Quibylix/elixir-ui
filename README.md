@@ -3,11 +3,16 @@
 Elixir UI is a React component library built with reusability and maintainability in mind.
 Create beautiful, responsive, and accessible user interfaces with ease using Elixir UI.
 
+[![MIT License](https://img.shields.io/badge/license-MIT-FF5722?style=for-the-badge)](./LICENSE)
+![Version](https://img.shields.io/badge/version-0.0.1%20alpha.0-00B0FF?style=for-the-badge)
+
 ## Requirements
 
-- 🐢 [Node.js](https://nodejs.org/en/). Version 20 or higher is recommended
-- 📦 A package manager like [npm](https://www.npmjs.com/), [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.js.org/)
-- ⚛️ [React.js](https://reactjs.org/). Version 18 or higher is recommended
+[![NodeJS](https://img.shields.io/badge/node.js%2020.x%20or%20higher%20recommended-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)<br/>
+[![React](https://img.shields.io/badge/react.js%2018.x%20or%20higher-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)<br/>
+[![CSS Modules](https://img.shields.io/badge/css%20modules-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/css-modules/css-modules)<br/>
+[![NPM](https://img.shields.io/badge/npm,%20yarn%20or%20pnpm-CC3534?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)<br/>
+[![Typescript](<https://img.shields.io/badge/typescript%20(Recommended)-3178C6?style=for-the-badge&logo=typescript&logoColor=white>)](https://www.typescriptlang.org/)<br/>
 
 ## Features:
 
