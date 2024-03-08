@@ -1,5 +1,5 @@
 import elixirUILogo from "@/assets/elixir-ui-logo.webp";
-import { getTranslation } from "@/features/i18n/hooks/get-translation.hook";
+import { getTranslation } from "@/features/i18n/services/get-translation.service";
 import { Button, Link } from "@elixir-ui/react";
 import Image from "next/image";
 import styles from "./page.module.css";

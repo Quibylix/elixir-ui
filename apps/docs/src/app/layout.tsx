@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { getTranslation } from "@/features/i18n/hooks/get-translation.hook";
+import { getTranslation } from "@/features/i18n/services/get-translation.service";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
