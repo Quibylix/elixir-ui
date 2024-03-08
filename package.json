@@ -3,6 +3,10 @@
   "version": "0.0.1-alpha.0",
   "description": "A super set of UI components for React",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/quibylix/elixir-ui.git"
