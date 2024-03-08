@@ -1,0 +1,23 @@
+{
+  "home": {
+    "metadata": {
+      "title": "Elixir UI | Docs",
+      "description": "Documentation for Elixir UI. A super set of components for React. Built with CSS modules."
+    },
+    "hero": {
+      "heading": {
+        "yourToolkit": "Your Toolkit",
+        "forCraftingExceptional": "for Crafting Exceptional",
+        "userInterfaces": "User Interfaces"
+      },
+      "description": {
+        "elixirUI": "Elixir UI",
+        "isA": "is a modern React component library designed to empower developers to build beautiful, responsive, and accessible user interfaces with speed and efficiency."
+      },
+      "cta": {
+        "getStarted": "Get Started",
+        "viewOnGitHub": "View on GitHub"
+      }
+    }
+  }
+}
