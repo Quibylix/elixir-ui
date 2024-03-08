@@ -8,6 +8,7 @@
     "url": "https://github.com/quibylix/elixir-ui.git"
   },
   "scripts": {
+    "commit": "sui-mono commit",
     "prepare": "husky",
     "lint-staged": "lint-staged",
     "build": "pnpm --filter ./packages/* run build"
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
+    "@s-ui/mono": "^2.45.0",
     "@testing-library/react": "^14.2.1",
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
