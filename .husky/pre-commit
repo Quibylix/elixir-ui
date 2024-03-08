@@ -1,1 +1,1 @@
-pnpm run lint-staged && pnpm exec tsc --noEmit
+pnpm run lint-staged && pnpm -r run tsc --noEmit

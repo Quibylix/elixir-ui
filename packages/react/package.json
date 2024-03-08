@@ -24,6 +24,7 @@
     "copy": "copyfiles -u 1 src/**/*.css dist",
     "build": "pnpm clean && tsc --project tsconfig.build.json && pnpm run copy",
     "storybook": "storybook dev -p 6006",
+    "check-types": "tsc --noEmit",
     "build-storybook": "storybook build",
     "prepublishOnly": "pnpm run build"
   },
