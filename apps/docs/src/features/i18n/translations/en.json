@@ -4,6 +4,9 @@
       "title": "Elixir UI | Docs",
       "description": "Documentation for Elixir UI. A super set of components for React. Built with CSS modules."
     },
+    "logo": {
+      "alt": "Elixir UI Logo"
+    },
     "hero": {
       "heading": {
         "yourToolkit": "Your Toolkit",

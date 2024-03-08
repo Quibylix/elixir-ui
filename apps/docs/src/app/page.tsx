@@ -13,7 +13,7 @@ export default async function HomePage() {
         <Image
           className={styles.logo}
           src={elixirUILogo}
-          alt="Elixir UI Logo"
+          alt={dict.home.logo.alt}
         />
         <h1 className={styles.heading}>
           <span className={styles.primaryColored}>
