@@ -2,6 +2,7 @@ import elixirUILogo from "@/assets/elixir-ui-logo.webp";
 import { getTranslation } from "@/features/i18n/services/get-translation.service";
 import { Button, Link } from "@elixir-ui/react";
 import Image from "next/image";
+import NextLink from "next/link";
 import styles from "./page.module.css";
 
 export default async function HomePage() {
@@ -33,8 +34,8 @@ export default async function HomePage() {
         <div className={styles.buttons}>
           <Button
             className={styles.button}
-            as="a"
-            href="#"
+            as={NextLink}
+            href="/docs"
             size="lg"
             color="primary"
           >
@@ -42,7 +43,7 @@ export default async function HomePage() {
           </Button>
           <Button
             className={styles.button}
-            as="a"
+            as={NextLink}
             href="https://github.com/quibylix/elixir-ui"
             target="_blank"
             rel="noopener noreferrer"
