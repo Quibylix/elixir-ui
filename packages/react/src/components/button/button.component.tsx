@@ -4,23 +4,28 @@ import styles from "./button.module.css";
 
 type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export type ButtonProps<T extends React.ElementType> =
-  React.ComponentPropsWithoutRef<T> & {
-    className?: BaseButtonProps["className"];
-    type?: BaseButtonProps["type"];
-    color?:
-      | "default"
-      | "primary"
-      | "secondary"
-      | "danger"
-      | "success"
-      | "warning"
-      | "info";
-    size?: "sm" | "md" | "lg";
-    variant?: "solid" | "outlined" | "ghost" | "text";
-    fullWidth?: boolean;
-    as?: T;
-  };
+type InternalButtonProps<T extends React.ElementType> = {
+  className?: string;
+  type?: BaseButtonProps["type"];
+  color?:
+    | "default"
+    | "primary"
+    | "secondary"
+    | "danger"
+    | "success"
+    | "warning"
+    | "info";
+  size?: "sm" | "md" | "lg";
+  variant?: "solid" | "outlined" | "ghost" | "text";
+  fullWidth?: boolean;
+  as?: T;
+};
+
+export type ButtonProps<T extends React.ElementType> = Omit<
+  React.ComponentPropsWithoutRef<T>,
+  keyof InternalButtonProps<T>
+> &
+  InternalButtonProps<T>;
 
 export default function Button<T extends React.ElementType = "button">({
   className,
