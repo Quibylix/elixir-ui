@@ -13,7 +13,7 @@ type InternalLinkProps<T extends React.ElementType> = {
     | "warning"
     | "info";
   size?: "sm" | "md" | "lg";
-  variant: "text" | "outlined";
+  variant?: "text" | "outlined";
   fullWidth?: boolean;
   external?: boolean;
   overrideClassName?: string;
