@@ -22,5 +22,15 @@
         "viewOnGitHub": "View on GitHub"
       }
     }
+  },
+  "navbar": {
+    "links": {
+      "docs": "Docs",
+      "gettingStarted": "Getting Started",
+      "components": "Components",
+      "about": "About",
+      "blog": "Blog",
+      "github": "GitHub"
+    }
   }
 }
