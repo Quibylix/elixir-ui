@@ -32,5 +32,31 @@
       "blog": "Blog",
       "github": "GitHub"
     }
+  },
+  "sideNavigationBar": {
+    "gettingStarted": {
+      "title": "Getting Started",
+      "links": {
+        "introduction": "Introduction",
+        "installation": "Installation",
+        "usage": "Usage"
+      }
+    },
+    "guides": {
+      "title": "Guides",
+      "links": {
+        "customization": "Customization",
+        "theming": "Theming",
+        "serverSideRendering": "Server Side Rendering"
+      }
+    },
+    "components": {
+      "title": "Components",
+      "links": {
+        "button": "Button",
+        "input": "Input",
+        "link": "Link"
+      }
+    }
   }
 }
