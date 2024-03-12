@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  gap: 1rem;
+  flex: 1;
+  width: 55rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main {
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: max-content 1fr;
+  }
+}
