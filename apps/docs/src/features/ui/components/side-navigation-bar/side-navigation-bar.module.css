@@ -1,7 +1,7 @@
 .aside {
   display: none;
   max-height: 100dvh;
-  padding: 1.3rem 2rem 1rem 0;
+  padding: 1.3rem 4rem 1rem 0;
   overflow-y: auto;
   position: sticky;
   top: 0;
