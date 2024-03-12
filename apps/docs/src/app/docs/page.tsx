@@ -1,8 +1,8 @@
 import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import ContentBlock from "@/features/ui/components/content-block/content-block.component";
 import { Link } from "@elixir-ui/react";
 import { Metadata } from "next";
 import NextLink from "next/link";
-import styles from "./page.module.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const dict = await getTranslation();
@@ -14,7 +14,7 @@ export default async function DocsPage() {
   const dict = (await getTranslation()).docs.introduction;
 
   return (
-    <div className={styles.styledHTML}>
+    <ContentBlock>
       <h1>{dict.heading}</h1>
       <p>{dict.description}</p>
       <section>
@@ -43,6 +43,6 @@ export default async function DocsPage() {
           {dict.gettingStarted.description.sectionForMoreInformation}
         </p>
       </section>
-    </div>
+    </ContentBlock>
   );
 }

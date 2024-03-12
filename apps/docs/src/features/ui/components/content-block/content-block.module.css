@@ -4,7 +4,7 @@
 */
 
 @layer reset {
-  .styledHTML {
+  .contentBlock {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     overflow: hidden;
@@ -15,81 +15,81 @@
     word-wrap: break-word;
   }
 
-  .styledHTML a {
+  .contentBlock a {
     background: transparent;
   }
 
-  .styledHTML a:active,
-  .styledHTML a:hover {
+  .contentBlock a:active,
+  .contentBlock a:hover {
     outline: 0;
   }
 
-  .styledHTML strong {
+  .contentBlock strong {
     font-weight: bold;
   }
 
-  .styledHTML h1 {
+  .contentBlock h1 {
     font-size: 2em;
     margin: 0.67em 0;
   }
 
-  .styledHTML img {
+  .contentBlock img {
     border: 0;
   }
 
-  .styledHTML hr {
+  .contentBlock hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
   }
 
-  .styledHTML pre {
+  .contentBlock pre {
     overflow: auto;
   }
 
-  .styledHTML code,
-  .styledHTML kbd,
-  .styledHTML pre {
+  .contentBlock code,
+  .contentBlock kbd,
+  .contentBlock pre {
     font-family: monospace, monospace;
     font-size: 1em;
   }
 
-  .styledHTML input {
+  .contentBlock input {
     color: inherit;
     font: inherit;
     margin: 0;
   }
 
-  .styledHTML html input[disabled] {
+  .contentBlock html input[disabled] {
     cursor: default;
   }
 
-  .styledHTML input {
+  .contentBlock input {
     line-height: normal;
   }
 
-  .styledHTML input[type="checkbox"] {
+  .contentBlock input[type="checkbox"] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
   }
 
-  .styledHTML table {
+  .contentBlock table {
     border-collapse: collapse;
     border-spacing: 0;
   }
 
-  .styledHTML td,
-  .styledHTML th {
+  .contentBlock td,
+  .contentBlock th {
     padding: 0;
   }
 
-  .styledHTML * {
+  .contentBlock * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .styledHTML input {
+  .contentBlock input {
     font:
       0.8rem/1.4 Helvetica,
       arial,
@@ -100,18 +100,18 @@
       "Segoe UI Symbol";
   }
 
-  .styledHTML a {
+  .contentBlock a {
     color: var(--info-600);
     text-decoration: none;
   }
 
-  .styledHTML a:hover,
-  .styledHTML a:focus,
-  .styledHTML a:active {
+  .contentBlock a:hover,
+  .contentBlock a:focus,
+  .contentBlock a:active {
     text-decoration: underline;
   }
 
-  .styledHTML hr {
+  .contentBlock hr {
     height: 0;
     margin: 0.93rem 0;
     overflow: hidden;
@@ -120,56 +120,56 @@
     border-bottom: 0.1rem solid var(--primary-100);
   }
 
-  .styledHTML hr:before {
+  .contentBlock hr:before {
     display: table;
     content: "";
   }
 
-  .styledHTML hr:after {
+  .contentBlock hr:after {
     display: table;
     clear: both;
     content: "";
   }
 
-  .styledHTML h1,
-  .styledHTML h2,
-  .styledHTML h3,
-  .styledHTML h4,
-  .styledHTML h5,
-  .styledHTML h6 {
+  .contentBlock h1,
+  .contentBlock h2,
+  .contentBlock h3,
+  .contentBlock h4,
+  .contentBlock h5,
+  .contentBlock h6 {
     margin-top: 0.93rem;
     margin-bottom: 0.93rem;
     line-height: 1.1;
   }
 
-  .styledHTML blockquote {
+  .contentBlock blockquote {
     margin: 0;
   }
 
-  .styledHTML ul,
-  .styledHTML ol {
+  .contentBlock ul,
+  .contentBlock ol {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .styledHTML ol ol,
-  .styledHTML ul ol {
+  .contentBlock ol ol,
+  .contentBlock ul ol {
     list-style-type: lower-roman;
   }
 
-  .styledHTML ul ul ol,
-  .styledHTML ul ol ol,
-  .styledHTML ol ul ol,
-  .styledHTML ol ol ol {
+  .contentBlock ul ul ol,
+  .contentBlock ul ol ol,
+  .contentBlock ol ul ol,
+  .contentBlock ol ol ol {
     list-style-type: lower-alpha;
   }
 
-  .styledHTML dd {
+  .contentBlock dd {
     margin-left: 0;
   }
 
-  .styledHTML code {
+  .contentBlock code {
     font:
       0.75rem Consolas,
       "Liberation Mono",
@@ -178,7 +178,7 @@
       monospace;
   }
 
-  .styledHTML pre {
+  .contentBlock pre {
     margin-top: 0;
     margin-bottom: 0;
     font:
@@ -189,7 +189,7 @@
       monospace;
   }
 
-  .styledHTML kbd {
+  .contentBlock kbd {
     background-color: var(--primary-200);
     background-image: -webkit-linear-gradient(var(--white), var(--primary-200));
     background-image: linear-gradient(var(--white), var(--primary-200));
@@ -208,20 +208,20 @@
     display: inline-block;
   }
 
-  .styledHTML > *:first-child {
+  .contentBlock > *:first-child {
     margin-top: 0 !important;
   }
 
-  .styledHTML > *:last-child {
+  .contentBlock > *:last-child {
     margin-bottom: 0 !important;
   }
 
-  .styledHTML h1,
-  .styledHTML h2,
-  .styledHTML h3,
-  .styledHTML h4,
-  .styledHTML h5,
-  .styledHTML h6 {
+  .contentBlock h1,
+  .contentBlock h2,
+  .contentBlock h3,
+  .contentBlock h4,
+  .contentBlock h5,
+  .contentBlock h6 {
     position: relative;
     margin-top: 1em;
     margin-bottom: 1rem;
@@ -230,7 +230,7 @@
     color: var(--secondary-500);
   }
 
-  .styledHTML h1 {
+  .contentBlock h1 {
     padding-bottom: 0.3em;
     font-size: 2.25em;
     line-height: 1.2;
@@ -238,43 +238,43 @@
     border-bottom: 0.1rem solid var(--primary-100);
   }
 
-  .styledHTML h2 {
+  .contentBlock h2 {
     padding-bottom: 0.3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 0.1rem solid var(--primary-100);
   }
 
-  .styledHTML h3 {
+  .contentBlock h3 {
     font-size: 1.5em;
     line-height: 1.43;
   }
 
-  .styledHTML h4 {
+  .contentBlock h4 {
     font-size: 1.25em;
   }
 
-  .styledHTML h5 {
+  .contentBlock h5 {
     font-size: 1em;
   }
 
-  .styledHTML h6 {
+  .contentBlock h6 {
     font-size: 1em;
     color: var(--primary-400);
   }
 
-  .styledHTML p,
-  .styledHTML blockquote,
-  .styledHTML ul,
-  .styledHTML ol,
-  .styledHTML dl,
-  .styledHTML table,
-  .styledHTML pre {
+  .contentBlock p,
+  .contentBlock blockquote,
+  .contentBlock ul,
+  .contentBlock ol,
+  .contentBlock dl,
+  .contentBlock table,
+  .contentBlock pre {
     margin-top: 0;
     margin-bottom: 1rem;
   }
 
-  .styledHTML hr {
+  .contentBlock hr {
     height: 0.25rem;
     padding: 0;
     margin: 1rem 0;
@@ -282,28 +282,28 @@
     border: 0 none;
   }
 
-  .styledHTML ul,
-  .styledHTML ol {
+  .contentBlock ul,
+  .contentBlock ol {
     padding-left: 2em;
   }
 
-  .styledHTML ul ul,
-  .styledHTML ul ol,
-  .styledHTML ol ol,
-  .styledHTML ol ul {
+  .contentBlock ul ul,
+  .contentBlock ul ol,
+  .contentBlock ol ol,
+  .contentBlock ol ul {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .styledHTML li > p {
+  .contentBlock li > p {
     margin-top: 1rem;
   }
 
-  .styledHTML dl {
+  .contentBlock dl {
     padding: 0;
   }
 
-  .styledHTML dl dt {
+  .contentBlock dl dt {
     padding: 0;
     margin-top: 1rem;
     font-size: 1em;
@@ -311,26 +311,26 @@
     font-weight: bold;
   }
 
-  .styledHTML dl dd {
+  .contentBlock dl dd {
     padding: 0 1rem;
     margin-bottom: 1rem;
   }
 
-  .styledHTML blockquote {
+  .contentBlock blockquote {
     padding: 0 0.94rem;
     color: var(--primary-400);
     border-left: 0.3rem solid var(--primary-100);
   }
 
-  .styledHTML blockquote > :first-child {
+  .contentBlock blockquote > :first-child {
     margin-top: 0;
   }
 
-  .styledHTML blockquote > :last-child {
+  .contentBlock blockquote > :last-child {
     margin-bottom: 0;
   }
 
-  .styledHTML table {
+  .contentBlock table {
     display: block;
     width: 100%;
     overflow: auto;
@@ -338,33 +338,33 @@
     word-break: keep-all;
   }
 
-  .styledHTML table th {
+  .contentBlock table th {
     font-weight: bold;
     background-color: var(--primary-100);
   }
 
-  .styledHTML table th,
-  .styledHTML table td {
+  .contentBlock table th,
+  .contentBlock table td {
     padding: 0.38rem 0.8rem;
     border: 0.1rem solid var(--primary-200);
   }
 
-  .styledHTML table tr {
+  .contentBlock table tr {
     background-color: var(--white);
     border-top: 0.1rem solid var(--primary-100);
   }
 
-  .styledHTML table tr:nth-child(2n) {
+  .contentBlock table tr:nth-child(2n) {
     background-color: var(--primary-50);
   }
 
-  .styledHTML img {
+  .contentBlock img {
     max-width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .styledHTML code {
+  .contentBlock code {
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -374,13 +374,13 @@
     border-radius: 0.2rem;
   }
 
-  .styledHTML code:before,
-  .styledHTML code:after {
+  .contentBlock code:before,
+  .contentBlock code:after {
     letter-spacing: -0.2em;
     content: "\00a0";
   }
 
-  .styledHTML pre > code {
+  .contentBlock pre > code {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -390,7 +390,7 @@
     border: 0;
   }
 
-  .styledHTML pre {
+  .contentBlock pre {
     padding: 1rem;
     overflow: auto;
     font-size: 85%;
@@ -399,11 +399,11 @@
     border-radius: 0.2rem;
   }
 
-  .styledHTML pre {
+  .contentBlock pre {
     word-wrap: normal;
   }
 
-  .styledHTML pre code {
+  .contentBlock pre code {
     display: inline;
     max-width: initial;
     padding: 0;
@@ -415,8 +415,8 @@
     border: 0;
   }
 
-  .styledHTML pre code:before,
-  .styledHTML pre code:after {
+  .contentBlock pre code:before,
+  .contentBlock pre code:after {
     content: normal;
   }
 }
