@@ -1,0 +1,422 @@
+/*
+  Code taken from
+  https://github.com/sindresorhus/github-markdown-css/blob/main/github-markdown.css
+*/
+
+@layer reset {
+  .styledHTML {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+      sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  .styledHTML a {
+    background: transparent;
+  }
+
+  .styledHTML a:active,
+  .styledHTML a:hover {
+    outline: 0;
+  }
+
+  .styledHTML strong {
+    font-weight: bold;
+  }
+
+  .styledHTML h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  .styledHTML img {
+    border: 0;
+  }
+
+  .styledHTML hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+
+  .styledHTML pre {
+    overflow: auto;
+  }
+
+  .styledHTML code,
+  .styledHTML kbd,
+  .styledHTML pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  .styledHTML input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .styledHTML html input[disabled] {
+    cursor: default;
+  }
+
+  .styledHTML input {
+    line-height: normal;
+  }
+
+  .styledHTML input[type="checkbox"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .styledHTML table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .styledHTML td,
+  .styledHTML th {
+    padding: 0;
+  }
+
+  .styledHTML * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .styledHTML input {
+    font:
+      0.8rem/1.4 Helvetica,
+      arial,
+      freesans,
+      clean,
+      sans-serif,
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  .styledHTML a {
+    color: var(--info-600);
+    text-decoration: none;
+  }
+
+  .styledHTML a:hover,
+  .styledHTML a:focus,
+  .styledHTML a:active {
+    text-decoration: underline;
+  }
+
+  .styledHTML hr {
+    height: 0;
+    margin: 0.93rem 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 0.1rem solid var(--primary-100);
+  }
+
+  .styledHTML hr:before {
+    display: table;
+    content: "";
+  }
+
+  .styledHTML hr:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .styledHTML h1,
+  .styledHTML h2,
+  .styledHTML h3,
+  .styledHTML h4,
+  .styledHTML h5,
+  .styledHTML h6 {
+    margin-top: 0.93rem;
+    margin-bottom: 0.93rem;
+    line-height: 1.1;
+  }
+
+  .styledHTML blockquote {
+    margin: 0;
+  }
+
+  .styledHTML ul,
+  .styledHTML ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .styledHTML ol ol,
+  .styledHTML ul ol {
+    list-style-type: lower-roman;
+  }
+
+  .styledHTML ul ul ol,
+  .styledHTML ul ol ol,
+  .styledHTML ol ul ol,
+  .styledHTML ol ol ol {
+    list-style-type: lower-alpha;
+  }
+
+  .styledHTML dd {
+    margin-left: 0;
+  }
+
+  .styledHTML code {
+    font:
+      0.75rem Consolas,
+      "Liberation Mono",
+      Menlo,
+      Courier,
+      monospace;
+  }
+
+  .styledHTML pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font:
+      0.75rem Consolas,
+      "Liberation Mono",
+      Menlo,
+      Courier,
+      monospace;
+  }
+
+  .styledHTML kbd {
+    background-color: var(--primary-200);
+    background-image: -webkit-linear-gradient(var(--white), var(--primary-200));
+    background-image: linear-gradient(var(--white), var(--primary-200));
+    background-repeat: repeat-x;
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--primary-200);
+    color: var(--black);
+    padding: 0.2rem 0.3rem;
+    line-height: 0.62rem;
+    font:
+      0.7rem Consolas,
+      "Liberation Mono",
+      Menlo,
+      Courier,
+      monospace;
+    display: inline-block;
+  }
+
+  .styledHTML > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  .styledHTML > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .styledHTML h1,
+  .styledHTML h2,
+  .styledHTML h3,
+  .styledHTML h4,
+  .styledHTML h5,
+  .styledHTML h6 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--secondary-500);
+  }
+
+  .styledHTML h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    color: var(--primary-600);
+    border-bottom: 0.1rem solid var(--primary-100);
+  }
+
+  .styledHTML h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 0.1rem solid var(--primary-100);
+  }
+
+  .styledHTML h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+  }
+
+  .styledHTML h4 {
+    font-size: 1.25em;
+  }
+
+  .styledHTML h5 {
+    font-size: 1em;
+  }
+
+  .styledHTML h6 {
+    font-size: 1em;
+    color: var(--primary-400);
+  }
+
+  .styledHTML p,
+  .styledHTML blockquote,
+  .styledHTML ul,
+  .styledHTML ol,
+  .styledHTML dl,
+  .styledHTML table,
+  .styledHTML pre {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .styledHTML hr {
+    height: 0.25rem;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: var(--primary-100);
+    border: 0 none;
+  }
+
+  .styledHTML ul,
+  .styledHTML ol {
+    padding-left: 2em;
+  }
+
+  .styledHTML ul ul,
+  .styledHTML ul ol,
+  .styledHTML ol ol,
+  .styledHTML ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .styledHTML li > p {
+    margin-top: 1rem;
+  }
+
+  .styledHTML dl {
+    padding: 0;
+  }
+
+  .styledHTML dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .styledHTML dl dd {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .styledHTML blockquote {
+    padding: 0 0.94rem;
+    color: var(--primary-400);
+    border-left: 0.3rem solid var(--primary-100);
+  }
+
+  .styledHTML blockquote > :first-child {
+    margin-top: 0;
+  }
+
+  .styledHTML blockquote > :last-child {
+    margin-bottom: 0;
+  }
+
+  .styledHTML table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+  }
+
+  .styledHTML table th {
+    font-weight: bold;
+    background-color: var(--primary-100);
+  }
+
+  .styledHTML table th,
+  .styledHTML table td {
+    padding: 0.38rem 0.8rem;
+    border: 0.1rem solid var(--primary-200);
+  }
+
+  .styledHTML table tr {
+    background-color: var(--white);
+    border-top: 0.1rem solid var(--primary-100);
+  }
+
+  .styledHTML table tr:nth-child(2n) {
+    background-color: var(--primary-50);
+  }
+
+  .styledHTML img {
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .styledHTML code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--primary-50);
+    border-radius: 0.2rem;
+  }
+
+  .styledHTML code:before,
+  .styledHTML code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+
+  .styledHTML pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  .styledHTML pre {
+    padding: 1rem;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--primary-50);
+    border-radius: 0.2rem;
+  }
+
+  .styledHTML pre {
+    word-wrap: normal;
+  }
+
+  .styledHTML pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .styledHTML pre code:before,
+  .styledHTML pre code:after {
+    content: normal;
+  }
+}
