@@ -1,5 +1,4 @@
 import { getTranslation } from "@/features/i18n/services/get-translation.service";
-import ContentBlock from "@/features/ui/components/content-block/content-block.component";
 import { Link } from "@elixir-ui/react";
 import { Metadata } from "next";
 import NextLink from "next/link";
@@ -14,7 +13,7 @@ export default async function DocsPage() {
   const dict = (await getTranslation()).docs.introduction;
 
   return (
-    <ContentBlock>
+    <>
       <h1>{dict.heading}</h1>
       <p>{dict.description}</p>
       <section>
@@ -43,6 +42,6 @@ export default async function DocsPage() {
           {dict.gettingStarted.description.sectionForMoreInformation}
         </p>
       </section>
-    </ContentBlock>
+    </>
   );
 }

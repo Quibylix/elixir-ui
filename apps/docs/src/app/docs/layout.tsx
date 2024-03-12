@@ -1,3 +1,4 @@
+import ContentBlock from "@/features/ui/components/content-block/content-block.component";
 import Navbar from "@/features/ui/components/navbar/navbar.component";
 import SideNavigationBar from "@/features/ui/components/side-navigation-bar/side-navigation-bar.component";
 import styles from "./layout.module.css";
@@ -13,7 +14,9 @@ export default function DocsLayout({
         <Navbar />
         <div className={styles.container}>
           <SideNavigationBar />
-          <main className={styles.main}>{children}</main>
+          <main className={styles.main}>
+            <ContentBlock>{children}</ContentBlock>
+          </main>
         </div>
       </div>
     </>
