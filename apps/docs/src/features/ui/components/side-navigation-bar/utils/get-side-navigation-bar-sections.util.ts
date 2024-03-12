@@ -33,7 +33,7 @@ export function getSideNavigationBarSections(
       title: dict.gettingStarted.title,
       links: [
         {
-          path: "/docs/introduction",
+          path: "/docs",
           title: dict.gettingStarted.links.introduction,
         },
         {
