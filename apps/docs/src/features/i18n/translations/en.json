@@ -58,5 +58,41 @@
         "link": "Link"
       }
     }
+  },
+  "docs": {
+    "introduction": {
+      "metadata": {
+        "title": "Introduction | Elixir UI",
+        "description": "Introduction to Elixir UI. A super set of components for React. Built with CSS modules."
+      },
+      "heading": "Introduction",
+      "description": "Elixir UI is a super set of components for React. Built with CSS modules.",
+      "whatIsElixirUI": {
+        "title": "What is Elixir UI?",
+        "description": "Elixir UI is a modern React component library designed to empower developers to build beautiful, responsive, and accessible user interfaces with speed and efficiency. It is a super set of components for React, built with CSS modules. Elixir UI is designed to be a flexible and extensible toolkit that can be used to build a wide variety of user interfaces. It is designed to be easy to use, easy to customize, and easy to extend. Elixir UI is designed to be a flexible and extensible toolkit that can be used to build a wide variety of user interfaces. It is designed to be easy to use, easy to customize, and easy to extend."
+      },
+      "features": {
+        "title": "Features",
+        "list": [
+          "⚛️ Modern React component library",
+          "🔒 Built with CSS modules",
+          "🖥️ Support for React Server Components",
+          "📱 Responsive and accessible user interfaces",
+          "🎨 Designed to empower developers to build beautiful, responsive, and accessible user interfaces with speed and efficiency",
+          "👨‍💻 Flexible and extensible toolkit",
+          "💪 Easy to use, easy to customize, and easy to extend"
+        ]
+      },
+      "gettingStarted": {
+        "title": "Getting Started",
+        "description": {
+          "toGetStarted": "To get started with Elixir UI, read the",
+          "installation": "Installation",
+          "sectionAndFollowTheInstructions": "section and follow the instructions. You can also check out the",
+          "usage": "Usage",
+          "sectionForMoreInformation": "section for more information."
+        }
+      }
+    }
   }
 }
