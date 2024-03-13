@@ -93,6 +93,53 @@
           "sectionForMoreInformation": "section for more information."
         }
       }
+    },
+    "installation": {
+      "metadata": {
+        "title": "Installation | Elixir UI",
+        "description": "Learn how to install Elixir UI in your project."
+      },
+      "heading": "Installation",
+      "description": {
+        "elixirUIIsDistributedAsAnNpmPackage": "Elixir UI is distributed as an npm package. You can install it in your project using your favorite package manager. We recommend using",
+        "forAFasterAndMoreEfficientInstallation": "for a faster and more efficient installation."
+      },
+      "requirements": {
+        "heading": "Requirements",
+        "list": {
+          "node": "Version 18 or higher recommended.",
+          "react": "Version 18 or higher.",
+          "cssModules": "Support for ",
+          "packageManager": "A package manager like ",
+          "or": ", or"
+        }
+      },
+      "installationSteps": {
+        "heading": "Installation",
+        "steps": {
+          "installPackage": "First, install the package using your package manager of choice:",
+          "addLayers": "Here, we are going to show you a general configuration of the package. If you want a more specific configuration for the most popular bundlers and frameworks, you can check the ",
+          "usage": "Usage",
+          "section": "section.",
+          "usesCSSLayers": "Elixir UI uses CSS layers to provide a consistent and customizable design. If you are not familiar with CSS layers, you can learn more about it in the ",
+          "mdnWebDocs": "MDN Web Docs",
+          "mustAddLayer": "You must add a layer for the Elixir UI variables and the another one for components in your CSS file. So, you must add the following line at the beginning of your main CSS file:",
+          "inAddition": "In addition, we recommend add another layer for your global styles:",
+          "finally": "Finally, you can start using the components in your React application. For example:",
+
+          "addLayer": "Add a layer for the Elixir UI variables and components in your CSS file.",
+          "addAnotherLayer": "Add another layer for your global styles (recommended).",
+          "importComponents": "Start using the components in your React application."
+        }
+      },
+      "nextSteps": {
+        "heading": "Next steps",
+        "description": {
+          "nowThatYouHaveInstalled": "Now that you have installed Elixir UI, you can start using the components in your application. If you want to learn more about the components, you can check the documentation in the ",
+          "components": "Components",
+          "section": " section."
+        }
+      }
     }
   }
 }
