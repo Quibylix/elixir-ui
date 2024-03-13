@@ -123,8 +123,8 @@
           "section": "section.",
           "usesCSSLayers": "Elixir UI uses CSS layers to provide a consistent and customizable design. If you are not familiar with CSS layers, you can learn more about it in the ",
           "mdnWebDocs": "MDN Web Docs",
-          "mustAddLayer": "You must add a layer for the Elixir UI variables and the another one for components in your CSS file. So, you must add the following line at the beginning of your main CSS file:",
-          "inAddition": "In addition, we recommend add another layer for your global styles:",
+          "mustAddLayer": "You must add a layer for the Elixir UI variables and another one for the components in your CSS file. So, you must add the following line at the beginning of your main CSS file:",
+          "inAddition": "In addition, we recommend adding another layer for your global styles:",
           "finally": "Finally, you can start using the components in your React application. For example:",
 
           "addLayer": "Add a layer for the Elixir UI variables and components in your CSS file.",
