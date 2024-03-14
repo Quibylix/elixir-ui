@@ -1,10 +1,10 @@
 import elixirUILogo from "@/assets/elixir-ui-logo.webp";
+import I18nLink from "@/features/i18n/components/i18n-link/i18n-link.component";
 import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import pageWithLangParam from "@/features/i18n/hocs/page-with-lang-param.hoc";
 import Navbar from "@/features/ui/components/navbar/navbar.component";
 import { Button, Link } from "@elixir-ui/react";
 import Image from "next/image";
-import NextLink from "next/link";
 import styles from "./page.module.css";
 
 export default pageWithLangParam(async function HomePage() {
@@ -38,7 +38,7 @@ export default pageWithLangParam(async function HomePage() {
           <div className={styles.buttons}>
             <Button
               className={styles.button}
-              as={NextLink}
+              as={I18nLink}
               href="/docs"
               size="lg"
               color="primary"
@@ -47,7 +47,7 @@ export default pageWithLangParam(async function HomePage() {
             </Button>
             <Button
               className={styles.button}
-              as={NextLink}
+              as={I18nLink}
               href="https://github.com/quibylix/elixir-ui"
               target="_blank"
               rel="noopener noreferrer"

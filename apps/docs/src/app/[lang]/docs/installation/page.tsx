@@ -1,8 +1,8 @@
+import I18nLink from "@/features/i18n/components/i18n-link/i18n-link.component";
 import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import pageWithLangParam from "@/features/i18n/hocs/page-with-lang-param.hoc";
 import { Link } from "@elixir-ui/react";
 import { Metadata } from "next";
-import NextLink from "next/link";
 
 export async function generateMetadata(): Promise<Metadata> {
   return (await LanguageContext.dict).docs.installation.metadata;
@@ -16,7 +16,7 @@ export default pageWithLangParam(async function InstallationPage() {
       <h1>{dict.heading}</h1>
       <p>
         {dict.description.elixirUIIsDistributedAsAnNpmPackage}{" "}
-        <Link as={NextLink} color="warning" external href="https://pnpm.io/">
+        <Link as={I18nLink} color="warning" external href="https://pnpm.io/">
           pnpm
         </Link>{" "}
         {dict.description.forAFasterAndMoreEfficientInstallation}
@@ -25,7 +25,7 @@ export default pageWithLangParam(async function InstallationPage() {
       <ul>
         <li>
           <Link
-            as={NextLink}
+            as={I18nLink}
             color="success"
             external
             href="https://nodejs.org/en/"
@@ -36,7 +36,7 @@ export default pageWithLangParam(async function InstallationPage() {
         </li>
         <li>
           <Link
-            as={NextLink}
+            as={I18nLink}
             color="secondary"
             external
             href="https://reactjs.org/"
@@ -48,7 +48,7 @@ export default pageWithLangParam(async function InstallationPage() {
         <li>
           {dict.requirements.list.cssModules}
           <Link
-            as={NextLink}
+            as={I18nLink}
             color="info"
             external
             href="https://github.com/css-modules/css-modules"
@@ -60,7 +60,7 @@ export default pageWithLangParam(async function InstallationPage() {
         <li>
           {dict.requirements.list.packageManager}
           <Link
-            as={NextLink}
+            as={I18nLink}
             color="danger"
             external
             href="https://www.npmjs.com/"
@@ -68,11 +68,11 @@ export default pageWithLangParam(async function InstallationPage() {
             npm
           </Link>
           ,{" "}
-          <Link as={NextLink} color="info" external href="https://yarnpkg.com/">
+          <Link as={I18nLink} color="info" external href="https://yarnpkg.com/">
             yarn
           </Link>
           {dict.requirements.list.or}{" "}
-          <Link as={NextLink} color="warning" external href="https://pnpm.io/">
+          <Link as={I18nLink} color="warning" external href="https://pnpm.io/">
             pnpm
           </Link>
           .
@@ -91,7 +91,7 @@ yarn add @elixir-ui/react`}
       </pre>
       <p>
         {dict.installationSteps.steps.addLayers}
-        <Link as={NextLink} href="/docs/usage" color="primary">
+        <Link as={I18nLink} href="/docs/usage" color="primary">
           {dict.installationSteps.steps.usage}
         </Link>{" "}
         {dict.installationSteps.steps.section}
@@ -99,7 +99,7 @@ yarn add @elixir-ui/react`}
       <p>
         {dict.installationSteps.steps.usesCSSLayers}
         <Link
-          as={NextLink}
+          as={I18nLink}
           color="primary"
           external
           href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
@@ -142,7 +142,7 @@ export default function App() {
       <h2>{dict.nextSteps.heading}</h2>
       <p>
         {dict.nextSteps.description.nowThatYouHaveInstalled}
-        <Link as={NextLink} href="/docs/components/button" color="primary">
+        <Link as={I18nLink} href="/docs/components/button" color="primary">
           {dict.nextSteps.description.components}
         </Link>{" "}
         {dict.nextSteps.description.section}

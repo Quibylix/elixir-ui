@@ -1,6 +1,6 @@
+import I18nLink from "@/features/i18n/components/i18n-link/i18n-link.component";
 import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import { Link } from "@elixir-ui/react";
-import NextLink from "next/link";
 import styles from "./side-navigation-bar.module.css";
 import { getSideNavigationBarSections } from "./utils/get-side-navigation-bar-sections.util";
 
@@ -19,7 +19,7 @@ export default async function SideNavigationBar() {
                   <li key={index}>
                     <Link
                       className={styles.link}
-                      as={NextLink}
+                      as={I18nLink}
                       href={link.path}
                       color="secondary"
                       fullWidth
