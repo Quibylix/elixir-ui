@@ -1,16 +1,15 @@
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
+import pageWithLangParam from "@/features/i18n/hocs/page-with-lang-param.hoc";
 import { Link } from "@elixir-ui/react";
 import { Metadata } from "next";
 import NextLink from "next/link";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const dict = await getTranslation();
-
-  return dict.docs.introduction.metadata;
+  return (await LanguageContext.dict).docs.introduction.metadata;
 }
 
-export default async function DocsPage() {
-  const dict = (await getTranslation()).docs.introduction;
+export default pageWithLangParam(async function DocsPage() {
+  const dict = (await LanguageContext.dict).docs.introduction;
 
   return (
     <>
@@ -44,4 +43,4 @@ export default async function DocsPage() {
       </section>
     </>
   );
-}
+});

@@ -1,16 +1,15 @@
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
+import pageWithLangParam from "@/features/i18n/hocs/page-with-lang-param.hoc";
 import { Link } from "@elixir-ui/react";
 import { Metadata } from "next";
 import NextLink from "next/link";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const dict = (await getTranslation()).docs.installation;
-
-  return dict.metadata;
+  return (await LanguageContext.dict).docs.installation.metadata;
 }
 
-export default async function InstallationPage() {
-  const dict = (await getTranslation()).docs.installation;
+export default pageWithLangParam(async function InstallationPage() {
+  const dict = (await LanguageContext.dict).docs.installation;
 
   return (
     <>
@@ -150,4 +149,4 @@ export default function App() {
       </p>
     </>
   );
-}
+});

@@ -1,11 +1,11 @@
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import { Link } from "@elixir-ui/react";
 import NextLink from "next/link";
 import Brand from "../brand/brand.component";
 import styles from "./navbar.module.css";
 
 export default async function Navbar() {
-  const dict = await getTranslation();
+  const dict = await LanguageContext.dict;
 
   return (
     <nav className={styles.navbar}>

@@ -1,13 +1,14 @@
 import elixirUILogo from "@/assets/elixir-ui-logo.webp";
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
+import pageWithLangParam from "@/features/i18n/hocs/page-with-lang-param.hoc";
 import Navbar from "@/features/ui/components/navbar/navbar.component";
 import { Button, Link } from "@elixir-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import styles from "./page.module.css";
 
-export default async function HomePage() {
-  const dict = await getTranslation();
+export default pageWithLangParam(async function HomePage() {
+  const dict = await LanguageContext.dict;
 
   return (
     <>
@@ -61,4 +62,4 @@ export default async function HomePage() {
       </main>
     </>
   );
-}
+});

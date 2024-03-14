@@ -1,11 +1,11 @@
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import { Link } from "@elixir-ui/react";
 import NextLink from "next/link";
 import styles from "./side-navigation-bar.module.css";
 import { getSideNavigationBarSections } from "./utils/get-side-navigation-bar-sections.util";
 
 export default async function SideNavigationBar() {
-  const dict = await getTranslation();
+  const dict = await LanguageContext.dict;
 
   return (
     <aside className={styles.aside}>

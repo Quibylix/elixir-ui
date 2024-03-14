@@ -1,12 +1,12 @@
 import elixirUILogo from "@/assets/elixir-ui-logo.webp";
-import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { LanguageContext } from "@/features/i18n/contexts/language.context";
 import { Link } from "@elixir-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import styles from "./brand.module.css";
 
 export default async function Brand() {
-  const dict = await getTranslation();
+  const dict = await LanguageContext.dict;
 
   return (
     <Link as={NextLink} variant="text" className={styles.brand} href="/">
