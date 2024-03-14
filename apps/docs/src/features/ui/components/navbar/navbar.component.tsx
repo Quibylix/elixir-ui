@@ -32,11 +32,6 @@ export default async function Navbar() {
               {dict.navbar.links.blog}
             </Link>
           </li>
-          <li>
-            <Link color="primary" as={I18nLink} href="/about">
-              {dict.navbar.links.about}
-            </Link>
-          </li>
         </ul>
         <I18nLink
           className={styles.githubLink}
