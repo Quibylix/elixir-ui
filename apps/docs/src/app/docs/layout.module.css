@@ -17,6 +17,7 @@
 }
 
 .main {
+  overflow-x: hidden;
   padding: 1rem 0;
 }
 
