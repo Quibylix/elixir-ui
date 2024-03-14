@@ -57,9 +57,12 @@ export function getSideNavigationBarSections(
     {
       title: dict.components.title,
       links: [
-        { path: "/docs/button", title: dict.components.links.button },
-        { path: "/docs/input", title: dict.components.links.input },
-        { path: "/docs/link", title: dict.components.links.link },
+        {
+          path: "/docs/components/button",
+          title: dict.components.links.button,
+        },
+        { path: "/docs/components/input", title: dict.components.links.input },
+        { path: "/docs/components/link", title: dict.components.links.link },
       ],
     },
   ];
