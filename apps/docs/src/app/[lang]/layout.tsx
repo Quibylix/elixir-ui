@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { getTranslation } from "@/features/i18n/services/get-translation.service";
+import { Language } from "@/features/i18n/types/language.type";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
@@ -12,15 +13,18 @@ export async function generateMetadata(): Promise<Metadata> {
   return dict.home.metadata;
 }
 
-const DEFAULT_LANGUAGE = "en";
-
-export default function RootLayout({
-  children,
-}: Readonly<{
+export type RootLayoutProps = Readonly<{
   children: React.ReactNode;
-}>) {
+  params: {
+    lang: Language;
+  };
+}>;
+
+export default function RootLayout({ children, params }: RootLayoutProps) {
+  const { lang } = params;
+
   return (
-    <html lang={DEFAULT_LANGUAGE}>
+    <html lang={lang}>
       <body className={roboto.className}>{children}</body>
     </html>
   );
