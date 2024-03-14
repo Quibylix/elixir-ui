@@ -1,0 +1,199 @@
+{
+  "home": {
+    "metadata": {
+      "title": "Elixir UI | Documentación",
+      "description": "Documentación para Elixir UI. Un conjunto de componentes para React. Construido con módulos CSS."
+    },
+    "logo": {
+      "alt": "Logo de Elixir UI"
+    },
+    "hero": {
+      "heading": {
+        "yourToolkit": "Tu Conjunto de Herramientas",
+        "forCraftingExceptional": "para Crear Interfaces Excepcionales",
+        "userInterfaces": "de Usuario"
+      },
+      "description": {
+        "elixirUI": "Elixir UI",
+        "isA": "es una moderna biblioteca de componentes de React diseñada para capacitar a los desarrolladores a construir interfaces de usuario hermosas, receptivas y accesibles con rapidez y eficiencia."
+      },
+      "cta": {
+        "getStarted": "Empezar",
+        "viewOnGitHub": "Ver en GitHub"
+      }
+    }
+  },
+  "navbar": {
+    "links": {
+      "docs": "Documentación",
+      "gettingStarted": "Empezando",
+      "components": "Componentes",
+      "about": "Acerca de",
+      "blog": "Blog",
+      "github": "GitHub"
+    }
+  },
+  "sideNavigationBar": {
+    "gettingStarted": {
+      "title": "Empezando",
+      "links": {
+        "introduction": "Introducción",
+        "installation": "Instalación",
+        "usage": "Uso"
+      }
+    },
+    "guides": {
+      "title": "Guías",
+      "links": {
+        "customization": "Personalización",
+        "theming": "Tematización",
+        "serverSideRendering": "Renderizado en el Servidor"
+      }
+    },
+    "components": {
+      "title": "Componentes",
+      "links": {
+        "button": "Botón",
+        "input": "Entrada",
+        "link": "Enlace"
+      }
+    }
+  },
+  "docs": {
+    "introduction": {
+      "metadata": {
+        "title": "Introducción | Elixir UI",
+        "description": "Introducción a Elixir UI. Un conjunto de componentes para React. Construido con módulos CSS."
+      },
+      "heading": "Introducción",
+      "description": "Elixir UI es un conjunto de componentes para React. Construido con módulos CSS.",
+      "whatIsElixirUI": {
+        "title": "¿Qué es Elixir UI?",
+        "description": "Elixir UI es una moderna biblioteca de componentes de React diseñada para capacitar a los desarrolladores a construir interfaces de usuario hermosas, receptivas y accesibles con rapidez y eficiencia. Es un conjunto de componentes para React, construido con módulos CSS. Elixir UI está diseñado para ser un conjunto de herramientas flexible y extensible que se puede utilizar para construir una amplia variedad de interfaces de usuario. Está diseñado para ser fácil de usar, fácil de personalizar y fácil de extender. Elixir UI está diseñado para ser un conjunto de herramientas flexible y extensible que se puede utilizar para construir una amplia variedad de interfaces de usuario. Está diseñado para ser fácil de usar, fácil de personalizar y fácil de extender."
+      },
+      "features": {
+        "title": "Características",
+        "list": [
+          "⚛️ Biblioteca de componentes de React moderna",
+          "🔒 Construido con módulos CSS",
+          "🖥️ Soporte para Componentes de Servidor de React",
+          "📱 Interfaces de usuario receptivas y accesibles",
+          "🎨 Diseñado para capacitar a los desarrolladores a construir interfaces de usuario hermosas, receptivas y accesibles con rapidez y eficiencia",
+          "👨‍💻 Conjunto de herramientas flexible y extensible",
+          "💪 Fácil de usar, fácil de personalizar y fácil de extender"
+        ]
+      },
+      "gettingStarted": {
+        "title": "Empezando",
+        "description": {
+          "toGetStarted": "Para empezar con Elixir UI, lee la",
+          "installation": "Instalación",
+          "sectionAndFollowTheInstructions": "sección y sigue las instrucciones. También puedes consultar la",
+          "usage": "Uso",
+          "sectionForMoreInformation": "sección para obtener más información."
+        }
+      }
+    },
+    "installation": {
+      "metadata": {
+        "title": "Instalación | Elixir UI",
+        "description": "Aprende cómo instalar Elixir UI en tu proyecto."
+      },
+      "heading": "Instalación",
+      "description": {
+        "elixirUIIsDistributedAsAnNpmPackage": "Elixir UI se distribuye como un paquete npm. Puedes instalarlo en tu proyecto utilizando tu gestor de paquetes favorito. Recomendamos usar",
+        "forAFasterAndMoreEfficientInstallation": "para una instalación más rápida y eficiente."
+      },
+      "requirements": {
+        "heading": "Requisitos",
+        "list": {
+          "node": "Se recomienda la versión 18 o superior.",
+          "react": "Versión 18 o superior.",
+          "cssModules": "Soporte para ",
+          "packageManager": "Un gestor de paquetes como ",
+          "or": ", o"
+        }
+      },
+      "installationSteps": {
+        "heading": "Instalación",
+        "steps": {
+          "installPackage": "Primero, instala el paquete utilizando tu gestor de paquetes preferido:",
+          "addLayers": "Aquí, vamos a mostrarte una configuración general del paquete. Si deseas una configuración más específica para los empaquetadores y frameworks más populares, puedes consultar la sección de ",
+          "usage": "Uso",
+          "section": ".",
+          "usesCSSLayers": "Elixir UI utiliza capas CSS para proporcionar un diseño consistente y personalizable. Si no estás familiarizado con las capas CSS, puedes obtener más información al respecto en la ",
+          "mdnWebDocs": "Documentación web de MDN",
+          "mustAddLayer": "Debes agregar una capa para las variables de Elixir UI y otra para los componentes en tu archivo CSS. Por lo tanto, debes agregar la siguiente línea al principio de tu archivo CSS principal:",
+          "inAddition": "Además, recomendamos agregar otra capa para tus estilos globales:",
+          "finally": "Finalmente, puedes comenzar a usar los componentes en tu aplicación de React. Por ejemplo:",
+
+          "addLayer": "Agrega una capa para las variables y componentes de Elixir UI en tu archivo CSS.",
+          "addAnotherLayer": "Agrega otra capa para tus estilos globales (recomendado).",
+          "importComponents": "Comienza a usar los componentes en tu aplicación de React."
+        }
+      },
+      "nextSteps": {
+        "heading": "Siguientes pasos",
+        "description": {
+          "nowThatYouHaveInstalled": "Ahora que has instalado Elixir UI, puedes comenzar a usar los componentes en tu aplicación. Si deseas obtener más información sobre los componentes, puedes consultar la documentación en la sección de ",
+          "components": "Componentes.",
+          "section": ""
+        }
+      }
+    },
+    "usage": {
+      "metadata": {
+        "title": "Uso | Elixir UI",
+        "description": "Aprende cómo usar Elixir UI en tu aplicación de React."
+      },
+      "heading": "Uso",
+      "description": {
+        "nowThatYouHaveInstalledElixirUI": "Ahora que has instalado Elixir UI, es posible que te preguntes cómo usarlo en tu aplicación de React. En esta sección, te mostraremos cómo usar los componentes en algunos de los empaquetadores y frameworks más populares.",
+        "ifYouAreUsing": "Si estás utilizando un empaquetador o framework diferente, puedes informarnos en el ",
+        "githubRepository": "repositorio de GitHub",
+        "andWeWillHelpYou": " y te ayudaremos."
+      },
+      "nextJS": {
+        "heading": "Next.js",
+        "description": "Next.js es el framework de React más popular. Es una excelente opción para construir aplicaciones estáticas y renderizadas en el servidor. Si estás utilizando Next.js, puedes seguir los pasos a continuación para usar Elixir UI en tu aplicación.",
+        "sections": {
+          "appRouter": {
+            "heading": "App Router",
+            "steps": {
+              "addLayers": "Agrega las capas para las variables y componentes de Elixir UI en tu archivo globals.css. Además, agrega otra capa para tus estilos globales (recomendado).",
+              "whenUsingLayers": "Cuando se utilizan capas CSS, la primera capa es la que tiene la menor prioridad. La capa para las variables de Elixir UI debe agregarse antes de la capa para los componentes.",
+              "addTheCSSImport": "Agrega la importación de CSS en tu archivo layout.(jsx|tsx). Asegúrate de agregar esta importación antes de la importación de los componentes."
+            }
+          },
+          "pagesRouter": {
+            "heading": "Pages Router",
+            "dontAvailable": "Esta sección estará disponible próximamente."
+          }
+        }
+      },
+      "vite": {
+        "heading": "Vite",
+        "description": "Vite es una herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y eficiente para proyectos web modernos. Si estás utilizando Vite, puedes seguir los pasos a continuación para usar Elixir UI en tu aplicación.",
+        "steps": {
+          "addLayers": "Agrega las capas para las variables y componentes de Elixir UI en tu archivo index.css. Además, agrega otra capa para tus estilos globales (recomendado).",
+          "whenUsingLayers": "Cuando se utilizan capas CSS, la primera capa es la que tiene la menor prioridad. La capa para las variables de Elixir UI debe agregarse antes de la capa para los componentes.",
+          "addTheCSSImport": "Agrega la importación de CSS en tu archivo main.(jsx|tsx). Asegúrate de agregar esta importación antes de la importación de los componentes."
+        }
+      },
+      "tailwind": {
+        "heading": "Tailwind CSS",
+        "description": {
+          "tailwindIs": "Tailwind CSS es un framework de CSS de utilidad que proporciona clases de utilidades de bajo nivel para construir diseños directamente en tu HTML.",
+          "allElixirUIComponents": "Todos los componentes de Elixir UI te permiten agregar clases personalizadas, las cuales anularán los estilos predeterminados. De esta manera, Elixir UI es totalmente compatible con Tailwind CSS.",
+          "ifYouAreUsingTailwindCSS": "Si estás utilizando Tailwind CSS, puedes seguir los pasos a continuación para usar Elixir UI en tu aplicación."
+        },
+        "steps": {
+          "wrapDirectives": "Envuelve las directivas de Tailwind con la directiva @layer en tu archivo CSS. Debes crear una capa para los estilos base y otra para las utilidades.",
+          "addLayers": "Agrega las capas para las variables y componentes de Elixir UI en tu archivo tailwind.css. Además, agrega otra capa para tus estilos globales (recomendado).",
+          "whenUsingLayers": "Cuando se utilizan capas CSS, la primera capa es la que tiene la menor prioridad. La capa para las variables de Elixir UI debe agregarse antes de la capa para los componentes.",
+          "addTheCSSImport": "Agrega la importación de CSS en tu archivo main.(jsx|tsx). Asegúrate de agregar esta importación antes de la importación de los componentes."
+        }
+      }
+    }
+  }
+}
