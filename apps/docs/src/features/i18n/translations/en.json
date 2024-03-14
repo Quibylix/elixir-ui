@@ -140,6 +140,60 @@
           "section": " section."
         }
       }
+    },
+    "usage": {
+      "metadata": {
+        "title": "Usage | Elixir UI",
+        "description": "Learn how to use Elixir UI in your React application."
+      },
+      "heading": "Usage",
+      "description": {
+        "nowThatYouHaveInstalledElixirUI": "Now that you have installed Elixir UI, you may be wondering how to use it in your React application. In this section, we are going to show you how to use the components in some of the most popular bundlers and frameworks.",
+        "ifYouAreUsing": "If you are using a different bundler or framework, you can let us know in the ",
+        "githubRepository": "GitHub repository",
+        "andWeWillHelpYou": " and we will help you."
+      },
+      "nextJS": {
+        "heading": "Next.js",
+        "description": "Next.js is the most popular React framework. It is a great choice for building static and server-rendered applications. If you are using Next.js, you can follow the steps below to use Elixir UI in your application.",
+        "sections": {
+          "appRouter": {
+            "heading": "App Router",
+            "steps": {
+              "addLayers": "Add the layers for the Elixir UI variables and components in your globals.css file. Also, add another layer for your global styles (recommended).",
+              "whenUsingLayers": "When using CSS layers the first layer is the one that has the lower priority. The layer for the Elixir UI variables must be added before the layer for the components.",
+              "addTheCSSImport": "Add the CSS import in your layout.(jsx|tsx) file. Be sure to add this import before the import of the components."
+            }
+          },
+          "pagesRouter": {
+            "heading": "Pages Router",
+            "dontAvailable": "This section will be available soon."
+          }
+        }
+      },
+      "vite": {
+        "heading": "Vite",
+        "description": "Vite is a build tool that aims to provide a faster and more efficient development experience for modern web projects. If you are using Vite, you can follow the steps below to use Elixir UI in your application.",
+        "steps": {
+          "addLayers": "Add the layers for the Elixir UI variables and components in your index.css file. Also, add another layer for your global styles (recommended).",
+          "whenUsingLayers": "When using CSS layers the first layer is the one that has the lower priority. The layer for the Elixir UI variables must be added before the layer for the components.",
+          "addTheCSSImport": "Add the CSS import in your main.(jsx|tsx) file. Be sure to add this import before the import of the components."
+        }
+      },
+      "tailwind": {
+        "heading": "Tailwind CSS",
+        "description": {
+          "tailwindIs": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build designs directly in your markup.",
+          "allElixirUIComponents": "All Elixir UI components allow you to add custom classes to the component, which will override the default styles. In this way, Elixir UI is fully compatible with Tailwind CSS.",
+          "ifYouAreUsingTailwindCSS": "If you are using Tailwind CSS, you can follow the steps below to use Elixir UI in your application."
+        },
+        "steps": {
+          "wrapDirectives": "Wrap the tailwind directives with the @layer directive in your CSS file. You must create a layer for the base styles and another one for the utilities.",
+          "addLayers": "Add the layers for the Elixir UI variables and components in your tailwind.css file. Also, add another layer for your global styles (recommended).",
+          "whenUsingLayers": "When using CSS layers the first layer is the one that has the lower priority. The layer for the Elixir UI variables must be added before the layer for the components.",
+          "addTheCSSImport": "Add the CSS import in your main.(jsx|tsx) file. Be sure to add this import before the import of the components."
+        }
+      }
     }
   }
 }
