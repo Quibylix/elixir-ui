@@ -1,0 +1,44 @@
+.languagePicker {
+  position: relative;
+}
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+.dropdownMenu {
+  background-color: var(--white);
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+  box-shadow: 0 0rem 1rem var(--neutral-200);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.dropdownMenu::after {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  right: 1.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-color: transparent transparent var(--white) transparent;
+}
+
+.dropdownMenu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
