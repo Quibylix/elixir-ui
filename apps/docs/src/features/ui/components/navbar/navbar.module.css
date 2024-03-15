@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+.actions {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+
 .githubLink {
   display: flex;
   align-items: center;
