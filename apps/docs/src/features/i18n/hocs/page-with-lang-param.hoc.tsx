@@ -43,7 +43,7 @@ export default function pageWithLangParam<T>(
       throw new Error("props.lang must be a valid language");
     }
 
-    LanguageContext.lang = lang;
+    LanguageContext.lang = lang as Language;
     LanguageContext.dict = getTranslation(lang as Language);
 
     return Page(props);
